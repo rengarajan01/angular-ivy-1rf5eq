@@ -1,0 +1,7 @@
+<h1>ngStyle and ngClass Demo</h1>
+<h1 style="color: red;">Course : {{course}}</h1>
+<hr>
+<h1 [ngStyle]="{'color':'red','font-size.px':24}">{{course}}</h1>
+<div *ngFor="let person of people">
+    <p [ngStyle]="{'color':getColor(person.country)}">{{person.name}}-{{person.country}}</p>
+</div>

@@ -1,0 +1,40 @@
+<h1>Course Component</h1>
+<div *ngFor="let course of courselist">
+<p>{{course.code}}</p>
+<p>{{course.name}}</p>
+<p>{{course.desc}}</p>
+<p>{{course.price}}</p>
+</div>
+<hr>
+<h1>Table Format</h1>
+<table border="1px">
+<tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+</tr>
+<tr *ngFor="let course of courselist">
+    <td>{{course.code}}</td>
+    <td>{{course.name}}</td>
+    <td>{{course.desc}}</td>
+    <td>{{course.price}}</td>
+</tr>
+</table>
+<ng-template #errCourses>
+No courses now. Try back later!!
+</ng-template>
+<hr>
+<ul>
+    <li>Code</li>
+    <li>Name</li>
+    <li>Description</li>
+    <li>Price</li>
+</ul>
+<ul *ngFor="let course of courselist">
+    <li>{{course.code}}</li>
+    <li>{{course.name}}</li>
+    <li>{{course.desc}}</li>
+    <li>{{course.price}}</li>
+</ul>
+<hr>
